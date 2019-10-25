@@ -64,6 +64,7 @@ class Benchmark(object):
     def __init__(self, run_dir, cal_methods, cal_method_names, cross_validator, random_state=None):
         # Create directory
         self.run_dir = os.path.abspath(run_dir)
+        print("self.run_dir:", self.run_dir)
         os.makedirs(self.run_dir, exist_ok=True)
         # Check models for consistency
         if not isinstance(cal_methods, (tuple, list)):
@@ -1193,6 +1194,7 @@ class CIFARData(Benchmark):
 
             # Save to file
             out_path = os.path.join(dataset_folder, output_folder)
+            print("====DEBUG====mkdir:", out_path)
             os.makedirs(out_path, exist_ok=True)
             np.savetxt(os.path.join(out_path, "logits_{}.csv".format(clf_name)), all_logits, delimiter=",")
             np.savetxt(os.path.join(out_path, "y_y_pred_{}.csv".format(clf_name)), all_y_y_pred.astype(int), fmt='%i',

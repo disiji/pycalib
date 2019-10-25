@@ -21,10 +21,10 @@ if __name__ == "__main__":
     ]
 
     # Setup
-    file = "/home/j/Documents/research/projects/nonparametric_calibration/pycalib/datasets/cifar100/"
+    file = "/Users/disiji/Dropbox/sandbox/pycalib/datasets/cifar100/"
     data_folder = "data"
     output_folder = "clf_output"
-    classify_images = False
+    classify_images = True
 
     if classify_images:
         for clf_name in clf_names:

@@ -49,7 +49,7 @@ if __name__ == "__main__":
     }
 
     # Setup
-    file = "/home/j/Documents/research/projects/nonparametric_calibration/pycalib/datasets/pcam/"
+    file = "/Users/disiji/Dropbox/sandbox/pycalib/datasets/pcam/"
     output_folder = "clf_output"
     data_folder = "data"
     classify_images = False
